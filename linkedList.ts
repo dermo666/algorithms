@@ -7,7 +7,7 @@ class LinkedListNode {
 class LinkedList {
   private head?: LinkedListNode;
 
-  push(data) {
+  addToEnd(data) {
     const newNode = new LinkedListNode(data);
 
     const lastNode = this.findLastNode();
@@ -99,12 +99,12 @@ class LinkedList {
 
 const linkedList = new LinkedList()
 
-const one = linkedList.push('one');
+const one = linkedList.addToEnd('one');
 
 console.log(linkedList);
 
-linkedList.push('two');
-linkedList.push('three');
+linkedList.addToEnd('two');
+linkedList.addToEnd('three');
 
 console.log(linkedList);
 
